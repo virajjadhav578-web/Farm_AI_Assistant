@@ -68,8 +68,8 @@ async function run() {
     ref: 'main',
     force: true,
     onAuth: () => ({
-      username: token,
-      password: '',
+      username: 'x-access-token',
+      password: token,
     }),
     onProgress: (p) => {
       if (p.phase) {
